@@ -1,0 +1,22 @@
+<h1>Artists</h1>
+<p>Here's a list of Artists: feel free to play with it.</p>
+<button mat-flat-button color="primary" class="btn-add" >
+  Add a new artist
+</button>
+<table class='table table-striped' aria-labelledby="tableLabel" [hidden]="!artists">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Genre</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let artist of artists">
+      <td>{{artist.id}}</td>
+      <td>{{artist.name }}</td>
+      <td>{{artist.genre}</td>
+    </tr>
+  </tbody>
+</table>
