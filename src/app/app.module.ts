@@ -11,7 +11,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { ArtistComponent } from './components/artists/artist.component';
 import { HomeComponent } from './components/home/home.component';
-import { ArtistSongsComponent } from './components/artists/artist-songs.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CounterComponent } from './counter.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
@@ -27,7 +26,6 @@ import {HealthCheckComponent} from './components/health-check/health-check.compo
     CounterComponent,
     HomeComponent,
     ArtistComponent,
-    ArtistSongsComponent,
     SongsComponent,
     HealthCheckComponent,
     LoginComponent
