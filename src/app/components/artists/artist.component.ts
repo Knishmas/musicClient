@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { environment } from 'environments/environment';
 import { Artist } from './Artist';
 
@@ -8,8 +8,9 @@ import { Artist } from './Artist';
   templateUrl: './artist.component.html',
   styleUrls: ['./artist.component.css']
 })
+
 export class ArtistComponent{
-  public artists!: Artist[];
+   artists!: Artist[];
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {

@@ -1,1 +1,16 @@
-<p>songs works!</p>
+<table class='table table-striped' aria-labelledby="tableLabel" [hidden]="!songs">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Artist Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let song of songs?.songs">
+            <td>{{song.name}}</td>
+            <td>{{song.year}}</td>
+            <td>{{songs?.artistName}}</td>
+        </tr>
+    </tbody>
+    </table>

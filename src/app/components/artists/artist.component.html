@@ -14,9 +14,9 @@
   </thead>
   <tbody>
     <tr *ngFor="let artist of artists">
-      <td>{{artist.id}}</td>
-      <td>{{artist.name }}</td>
-      <td>{{artist.genre}</td>
+      <td><a [routerLink]="['/songs', artist.id]">{{artist.id}}</a></td>
+      <td>{{artist.artistName }}</td>
+      <td>{{artist.genre}}</td>
     </tr>
   </tbody>
 </table>
